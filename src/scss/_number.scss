@@ -1,0 +1,84 @@
+#number-sec{
+    background-color: $bg-l-black;
+    color: $text-white;
+    position: relative;
+    padding-block: 7rem;
+    padding-inline: 35px;
+
+    .num-sec-wrapper{
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        gap: .8rem;
+        width: 100%;
+        border-radius: 4.5rem;
+        overflow: hidden;
+        
+        
+        .num-card{
+            background-color: $bg-d-black;
+            width: calc(100% / 4);
+            text-align: center;
+            padding-block:9.5rem 7rem;
+            z-index: 5;
+
+            .num{
+                font-size: 8.7rem;
+                font-weight: 600;
+                font-family: "Montserrat",Sans-serif;
+                color:$light-green;
+            }
+
+            .num-title{
+                font-size: 2.4rem;
+                font-weight: 400;
+                line-height: 3.5em;
+                color:$btn-bg-white;
+            }
+        }
+    }
+
+    .top-circle{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .bottom-circle{
+        position: absolute;
+        bottom: 2.5rem;
+        left: 0;
+        z-index:1;
+    }
+}
+
+@media screen and (max-width:1024px){
+    #number-sec{
+        .num-sec-wrapper{
+            border-radius: 2.5rem;
+
+            .num-card{
+                padding-block:5rem;
+
+                .num{
+                    font-size: 5rem;
+                }
+                .num-title{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    #number-sec{
+        .num-sec-wrapper{
+           flex-direction: column;
+           gap: 0;
+            .num-card{
+                width: 100%;
+                padding-block: 3rem 2rem;
+            }
+        }
+    }
+}

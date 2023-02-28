@@ -1,0 +1,175 @@
+#skills {
+    width: 100%;
+    background-color: $bg-l-black;
+    color: $white;
+    padding-block: 10rem;
+    padding-inline: 35px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .cards-side {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column; 
+
+            .top-margin{
+                position: absolute;
+                top: 30px;
+                right:0 ;
+            }
+
+            .row{
+                display: flex;
+                width: 100%;
+                gap: 3rem;
+                position: relative;
+
+                .card {
+                    background-color: $bg-d-black;
+                    width: calc(50% - 15px);
+                    padding: 6rem 2rem;
+                    margin-bottom: 3rem;
+                    border-radius: 4rem;
+                    text-align: center;
+                    
+                    .circle-border {
+                        width: 10rem;
+                        height: 10rem;
+                        margin-inline: auto;
+                        border: 0.1rem solid $light-green;
+                        background-color: $bg-l-black;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 2.5rem;
+                        
+                        img {
+                            width: 4rem;
+                            height: 4rem;
+                        }
+                    }
+                    
+                    .card-title {
+                        font-size: 2.8rem;
+                        font-weight: 700;
+                        margin-block: .6rem 1rem;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+
+                    p {
+                        font-size: 1.8rem;
+                        color:$btn-bg-white ;
+                    }
+
+                    &:hover{
+                        transition: all 0.3s ease-in-out;
+                        background-color: transparent;
+                        background-image: linear-gradient(180deg,$light-green 0%,$dark-green 100%);
+                        box-shadow: 25px 25px 30px 0px rgb(100 244 171 / 15%);
+                    }
+                    &:hover .circle-border{
+                        transition: all 0.4s ease-in-out;
+                        background: transparent linear-gradient(180deg,$dark-green 0%,$light-green 100%) 0% 0% no-repeat padding-box;
+                        border-color:$light-green;
+                    }
+                    &:hover .circle-border svg g path{
+                        transition: all 0.4s ease-in-out;
+                        fill: white; 
+                    }
+                }
+            } 
+        }
+
+        .text-side {
+            width: 50%;
+            padding-left: 16rem;
+
+            .g-heading{
+                margin-bottom: 1.5rem;
+            }
+          
+            .btn-primary{
+                padding-inline: 5.3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px){
+    #skills{
+        .container{
+            align-items: normal;
+            .cards-side {
+                width: 60%;
+
+                .row{
+                    .card{
+                        padding: 3rem 1rem;
+
+                        .card-title{
+                            font-size: 2rem;
+                        }
+                        p {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            } 
+            .text-side{
+                width: 40%;
+                padding-left: 30px;
+                .animate-wrap{
+
+                    .bold-heading{
+                        font-size: 2.5rem;
+                        font-weight: 600;
+                    }
+                    .para{
+                        font-size: 1.4rem;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    #skills{
+        padding-block: 5rem;
+        .container{
+            max-width: 668px;
+            flex-direction: column-reverse;
+
+            .cards-side{
+                width: 100%;
+                .top-margin{
+                    position: unset;
+                }
+
+                .row{
+                    flex-direction: column;
+                    width: inherit;
+
+                    .card{
+                        width: inherit;
+                    }
+                }
+            }
+            .text-side{
+                width: 100%;
+                margin-bottom: 5rem;
+                padding-left: 0;
+                
+                .btn-primary{
+                    padding-inline: 2.5rem;
+                }
+            }
+        }
+    }
+}

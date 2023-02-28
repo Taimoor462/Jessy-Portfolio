@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a2a9cf95ad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./src/css/main.css">
+    <title>Coming-Soon</title>
+</head>
+<body>
+    <!-- $$$$$$$$$$$$$$$$ Navbar $$$$$$$$$$$$$ -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-items">
+        <div class="logo-wrapper">
+          <a href="./index.html" class="logo">
+            <img src="./src/svgs/logo-header.svg" alt="Logo">
+          </a>
+        </div>
+        <ul id="ulList" class="">
+          <li class="close" onclick="closeNav()"><i class="fa fa-close"></i></li>
+          <li class="ul-item"><a href="./index.html">Home</a></li>
+          <li class="ul-item"><a href="./portfolio.html">Portfolio</a></li>
+          <li class="ul-item"><a class="active" href="./coming.html">Contact</a></li>
+        </ul>
+        <div class="hamburger-wrapper">
+          <div id="hamburger" onclick="toggle()">
+            <span id="lineOne"></span>
+            <span id="lineTwo"></span>
+            <span id="lineThree"></span>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media-item">
+            <i class="fa fa-dribbble"></i>
+          </div>
+        </div>
+        <div class="btn-wrapper" >
+          <a class="btn btn-primary" href="./coming.html">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<section class="coming">
+    <div class="container">
+        <h1>Coming Soon....</h1>
+    </div>
+</section>
+  <!-- $$$$$$$$$$$$ footer $$$$$$$$$$$$ -->
+
+  <section class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="./src/svgs/logo-header.svg" alt="Logo">
+      </div>
+      <p>&copy; 2023 Freelancer - Phlox Elementor WordPress Theme. All rights reserved.</p>
+      <div class="social-set">
+        <div class="media-item">
+          <i class="fa-brands fa-twitch"></i>
+        </div>
+        <div class="media-item">
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+        <div class="media-item">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div class="media-item">
+          <i class="fab fa-behance"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./script.js"></script>
+</body>
+</html>

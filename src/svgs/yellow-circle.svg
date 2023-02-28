@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 124 124">
+  <defs>
+    <linearGradient id="linear-gradient10" x1="0.5" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#fecd1a"></stop>
+      <stop offset="1" stop-color="#ffaf29"></stop>
+    </linearGradient>
+  </defs>
+  <circle id="circle_shape_-_left_-_achievement_section" data-name="circle shape - left - achievement section" cx="62" cy="62" r="62" fill="url(#linear-gradient10)"></circle>
+</svg>

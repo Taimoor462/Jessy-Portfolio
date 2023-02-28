@@ -1,0 +1,100 @@
+#work{
+    background-color: $bg-l-black;
+    color: $text-white;
+    padding-block: 10rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+    .container{
+        background-color: $bg-d-black;
+        border-radius: 4.5rem;
+        background-image: url(../images/Intersection-2.svg);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: auto;
+        opacity: 1;
+        width: calc(100% - 7rem);
+        margin-inline: auto;
+
+        
+        .content-wrapper{
+            background-image: url(../images/Intersection-1.svg);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: auto;
+            opacity: 1;
+
+            .content{
+                max-width: 700px;
+                padding-inline: 1.5rem;
+                margin-inline: auto;
+                text-align: center;
+                padding-block: 6rem;
+    
+                .line{
+                    width: 7.5rem;
+                    height:.3rem;
+                    margin-inline: auto;
+                    background-color:$dark-green;
+                }
+    
+                .bold-heading{
+                    font-size: 4.6rem;
+                    font-weight: 600;
+                    margin-block:1rem 2rem;
+                }
+    
+                .para{
+                    margin-bottom: 1.8rem;
+                    line-height: 2.9rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #work{
+        .container{
+            background-size: 10rem;
+
+            .content-wrapper{
+                background-size: 12rem;
+
+                .content{
+                    padding-block: 7rem 7.5rem;
+
+                    .bold-heading{
+                        font-size: 2.5rem;
+                        font-weight: 600;
+                        margin-block: 2rem;
+                    }
+                    .para{
+                        font-size: 1.4rem;
+                        line-height: 2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px){
+    #work{
+        .container{
+            background-size: 10rem;
+
+            .content-wrapper{
+                background-size: 12rem;
+
+                .content{
+                    padding-block: 7rem 7.5rem;
+                    max-width: 50.7rem;
+                }
+                .btn-primary{
+                    padding-inline: 2rem;
+                }
+            }
+        }
+    }
+}
