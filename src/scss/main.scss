@@ -12,7 +12,7 @@
     background-color:rgba(33,150,243,.2);
 }
 html{
-    scroll-behavior: smooth ;
+    scroll-behavior: smooth;
 }
 :root {
     font-size: 62.5%;
@@ -190,9 +190,9 @@ body {
         font-family: 'Raleway', sans-serif;
         min-width: 15.5rem;
         margin-bottom: .5rem;
-        animation: reflection 5s 2s infinite;
         cursor: pointer;
         position: relative;
+        animation: reflection 5s 2s infinite;
 
         @keyframes reflection {
             0%{

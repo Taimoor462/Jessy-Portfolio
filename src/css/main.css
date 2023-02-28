@@ -106,7 +106,6 @@ body {
 }
 .navbar .container .nav-items .media {
   margin-left: -0.2rem;
-  flex: 0.5;
   animation: fade-left1 1.5s 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) both;
 }
 .navbar .container .nav-items .media .media-item {
@@ -1334,9 +1333,9 @@ body {
   font-family: "Raleway", sans-serif;
   min-width: 15.5rem;
   margin-bottom: 0.5rem;
-  animation: reflection 5s 2s infinite;
   cursor: pointer;
   position: relative;
+  animation: reflection 5s 2s infinite;
 }
 @keyframes reflection {
   0% {
